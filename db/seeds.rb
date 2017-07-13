@@ -21,6 +21,8 @@ posts = Post.all
   )
 end
 
+Post.find_or_create_by(title:"Ronzelington Rex", body:"The musiciain and voice of a generation")
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
