@@ -16,11 +16,12 @@
         </div>
       </div>
     <% end %>
-  </div>
-  <% if user_is_authorized_for_topics? %>
+  <% if user_is_authorized_to_create_or_delete_topics? %>
   <div class="col-md-4">
 <!-- #9 -->
     <%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
-    <% end %>
+  </div>
+  <% end %>
+
   </div>
 </div>
