@@ -24,6 +24,7 @@ RSpec.describe Post, type: :model do
    it { is_expected.to validate_length_of(:body).is_at_least(20) }
     it { is_expected.to have_many(:comments) }
     it { is_expected.to have_many(:votes) }
+    it { is_expected.to have_many(:favorites) }
 
 # #2
   describe "attributes" do
